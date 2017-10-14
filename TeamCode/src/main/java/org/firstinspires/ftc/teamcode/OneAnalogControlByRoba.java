@@ -37,12 +37,12 @@ public class OneAnalogControlByRoba extends OpMode {  //Basic class where the co
     public void loop() { //Runs repeatedly after driver hits start until driver hits end.
 
         if (gamepad1.left_stick_x > 0.5) { //When setting the left analog stick to right.
-            leftMotor.setPower(0.01);
+            leftMotor.setPower(-1.0);
             rightMotor.setPower(1.0);
         }
         if (gamepad1.left_stick_x < -0.5) { //When setting the left analog stick to left.
             leftMotor.setPower(1.0);
-            rightMotor.setPower(0.01);
+            rightMotor.setPower(-1.0);
         }
         if (gamepad1.left_stick_y > 0.5) { //When setting the left analog stick to down.
             leftMotor.setPower(-1.0);
