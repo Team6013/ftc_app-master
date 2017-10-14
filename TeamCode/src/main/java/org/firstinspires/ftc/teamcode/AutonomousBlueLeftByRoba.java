@@ -57,7 +57,7 @@ public class AutonomousBlueLeftByRoba extends LinearOpMode {
         //Begin editing code here.
         forward(1, 10000);
         left(1, 10000);
-        
+
         stop_driving();
         //Stop editing code here.
 
