@@ -67,30 +67,30 @@ public class AutonomousBlueLeftByRoba extends LinearOpMode {
     public void forward(double motorPower, long timeInMilliseconds) throws InterruptedException{
         leftMotor.setPower(motorPower);
         rightMotor.setPower(motorPower);
-        telemetry.addData("Motors", "The robot's left motor is running at " + motorPower);
-        telemetry.addData("Motors", "The robot's right motor is running at " + motorPower);
+        telemetry.addData("Motors", "The robot's left motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
+        telemetry.addData("Motors", "The robot's right motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         Thread.sleep(timeInMilliseconds);
     }
     public void backward(double motorPower, long timeInMilliseconds) throws InterruptedException{
         leftMotor.setPower(motorPower);
         rightMotor.setPower(motorPower);
-        telemetry.addData("Motors", "The robot's left motor is running at " + motorPower);
-        telemetry.addData("Motors", "The robot's right motor is running at " + motorPower);
+        telemetry.addData("Motors", "The robot's left motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
+        telemetry.addData("Motors", "The robot's right motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         Thread.sleep(timeInMilliseconds);
 
     }
     public void left(double motorPower, long timeInMilliseconds) throws InterruptedException{
         leftMotor.setPower(motorPower);
         rightMotor.setPower(-motorPower);
-        telemetry.addData("Motors", "The robot's left motor is running at " + motorPower);
-        telemetry.addData("Motors", "The robot's right motor is running at " + -motorPower);
+        telemetry.addData("Motors", "The robot's left motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
+        telemetry.addData("Motors", "The robot's right motor is running at " + -motorPower + " for " + timeInMilliseconds + " milliseconds.");
         Thread.sleep(timeInMilliseconds);
     }
     public void right(double motorPower, long timeInMilliseconds) throws InterruptedException{
         leftMotor.setPower(-motorPower);
         rightMotor.setPower(motorPower);
-        telemetry.addData("Motors", "The robot's left motor is running at " + -motorPower);
-        telemetry.addData("Motors", "The robot's right motor is running at " + motorPower);
+        telemetry.addData("Motors", "The robot's left motor is running at " + -motorPower + " for " + timeInMilliseconds + " milliseconds.");
+        telemetry.addData("Motors", "The robot's right motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         Thread.sleep(timeInMilliseconds);
     }
     public void stop_driving() {
