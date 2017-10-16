@@ -43,9 +43,9 @@ import static com.sun.tools.javac.util.Constants.format;
  *                 Start where it says "Begin editing code here." and end where it says "Stop editing code here." DO NOT edit any code outside of those two comments!
  */
 
-@Autonomous(name="AutonomousUsingVuforiaVuMarksByRoba", group ="AutonomousUsingVuforiaVuMarksByRoba")
+@Autonomous(name="VuforiaVuMarksAutonomousByRoba", group ="VuforiaVuMarksAutonomousByRoba")
 //@Disabled
-public class AutonomousUsingVuforiaVuMarksByRoba extends LinearOpMode {
+public class VuforiaVuMarksAutonomousByRoba extends LinearOpMode {
 
     VuforiaLocalizer vuforia;
 
