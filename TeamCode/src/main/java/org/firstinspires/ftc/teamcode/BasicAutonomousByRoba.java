@@ -42,7 +42,7 @@ public class BasicAutonomousByRoba extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException{
 
-        telemetry.addData("Status", "This script has been made by Roba! " + "The robot has initialized! ");
+        telemetry.addData("Status", "This script has been made by the FTC Programming Team! " + "The robot has initialized! ");
 
         leftMotor = hardwareMap.get(DcMotor.class, "leftMotor");
         rightMotor = hardwareMap.get(DcMotor.class, "rightMotor");
