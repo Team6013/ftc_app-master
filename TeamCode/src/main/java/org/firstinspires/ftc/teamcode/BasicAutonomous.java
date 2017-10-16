@@ -28,7 +28,7 @@ import com.qualcomm.robotcore.util.Range;
  *                 Start where it says "Begin editing code here." and end where it says "Stop editing code here." DO NOT edit any code outside of those two comments!
  */
 
-@Autonomous(name="BasicAutonomousByRoba", group="AutonomousByRoba")
+@Autonomous(name="BasicAutonomous", group="Autonomous")
 //@Disabled
 
 public class BasicAutonomousByRoba extends LinearOpMode {
