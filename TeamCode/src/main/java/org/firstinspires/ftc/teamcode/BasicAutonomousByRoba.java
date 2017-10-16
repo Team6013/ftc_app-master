@@ -70,6 +70,8 @@ public class BasicAutonomousByRoba extends LinearOpMode {
         telemetry.addData("Motors", "The robot's left motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         telemetry.addData("Motors", "The robot's right motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         Thread.sleep(timeInMilliseconds);
+        leftMotor.setPower(0);
+        rightMotor.setPower(0);
     }
     public void backward(double motorPower, long timeInMilliseconds) throws InterruptedException{
         leftMotor.setPower(motorPower);
@@ -77,6 +79,8 @@ public class BasicAutonomousByRoba extends LinearOpMode {
         telemetry.addData("Motors", "The robot's left motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         telemetry.addData("Motors", "The robot's right motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         Thread.sleep(timeInMilliseconds);
+        leftMotor.setPower(0);
+        rightMotor.setPower(0);
 
     }
     public void left(double motorPower, long timeInMilliseconds) throws InterruptedException{
@@ -85,6 +89,8 @@ public class BasicAutonomousByRoba extends LinearOpMode {
         telemetry.addData("Motors", "The robot's left motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         telemetry.addData("Motors", "The robot's right motor is running at " + -motorPower + " for " + timeInMilliseconds + " milliseconds.");
         Thread.sleep(timeInMilliseconds);
+        leftMotor.setPower(0);
+        rightMotor.setPower(0);
     }
     public void right(double motorPower, long timeInMilliseconds) throws InterruptedException{
         leftMotor.setPower(-motorPower);
@@ -92,6 +98,8 @@ public class BasicAutonomousByRoba extends LinearOpMode {
         telemetry.addData("Motors", "The robot's left motor is running at " + -motorPower + " for " + timeInMilliseconds + " milliseconds.");
         telemetry.addData("Motors", "The robot's right motor is running at " + motorPower + " for " + timeInMilliseconds + " milliseconds.");
         Thread.sleep(timeInMilliseconds);
+        leftMotor.setPower(0);
+        rightMotor.setPower(0);
     }
     public void stop_driving() {
         leftMotor.setPower(0);
