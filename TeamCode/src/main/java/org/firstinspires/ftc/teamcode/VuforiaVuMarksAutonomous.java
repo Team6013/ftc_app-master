@@ -4,6 +4,20 @@ package org.firstinspires.ftc.teamcode;
  * Created by Roba Abbajabal on 10/13/17.
  */
 
+/*
+ *           README: Commands made by Roba Abbajabal
+ *--------------------------------------------------------------
+ * forward(motorPower, timeInMilliseconds);
+ * backward(motorPower, timeInMilliseconds);
+ * left(motorPower, timeInMilliseconds);
+ * right(motorPower, timeInMilliseconds);
+ * stop_driving();
+ *
+ * IMPORTANT NOTE: motorPower can range between 0 to 1, 0 being no movement and 1 being full forward. motorPower can be written in decimal numbers. (Ex: 0, 0.4, 1)
+ *                 timeInMilliseconds does not accept decimal/fractional numbers.
+ *                 Start where it says "Begin editing code here." and end where it says "Stop editing code here." DO NOT edit any code outside of those two comments!
+ */
+
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -28,24 +42,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 
 import static com.sun.tools.javac.util.Constants.format;
 
-
-/*
- *           README: Commands made by Roba Abbajabal
- *--------------------------------------------------------------
- * forward(motorPower, timeInMilliseconds);
- * backward(motorPower, timeInMilliseconds);
- * left(motorPower, timeInMilliseconds);
- * right(motorPower, timeInMilliseconds);
- * stop_driving();
- *
- * IMPORTANT NOTE: motorPower can range between 0 to 1, 0 being no movement and 1 being full forward. motorPower can be written in decimal numbers. (Ex: 0, 0.4, 1)
- *                 timeInMilliseconds does not accept decimal/fractional numbers.
- *                 Start where it says "Begin editing code here." and end where it says "Stop editing code here." DO NOT edit any code outside of those two comments!
- */
-
-@Autonomous(name="VuforiaVuMarksAutonomousByRoba", group ="VuforiaVuMarksAutonomousByRoba")
+@Autonomous(name="VuforiaVuMarksAutonomous", group ="VuforiaVuMarksAutonomous")
 //@Disabled
-public class VuforiaVuMarksAutonomousByRoba extends LinearOpMode {
+public class VuforiaVuMarksAutonomous extends LinearOpMode {
 
     VuforiaLocalizer vuforia;
 

@@ -11,13 +11,13 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
 /**
- * Created by Roba Abbajabal on 10/11/17.
+ * Created by Roba Abbajabal on 10/13/17.
  */
 
-@TeleOp(name="OneAnalogControlByRoba", group="AnalogControlByRoba") //Calls this class (program) a teleop so it can be run at the driver station.
+@TeleOp(name="TwoAnalogControl", group="AnalogControlByRoba") //Calls this class (program) a teleop so it can be run at the driver station.
 //@Disabled  //Disables this script from showing up in the driver station.
 
-public class OneAnalogControlByRoba extends OpMode {  //Basic class where the code runs and extends this to the Opmode procedures.
+public class TwoAnalogControl extends OpMode {
 
     private ElapsedTime runTime = new ElapsedTime(); //Creates a time for the amount of time driven on the drive station.
     private DcMotor leftMotor = null; //Makes a variable called leftMotor.
@@ -36,11 +36,11 @@ public class OneAnalogControlByRoba extends OpMode {  //Basic class where the co
     @Override
     public void loop() { //Runs repeatedly after driver hits start until driver hits end.
 
-        if (gamepad1.left_stick_x > 0.5) { //When setting the left analog stick to right.
+        if (gamepad1.right_stick_x > 0.5) { //When setting the left analog stick to right.
             leftMotor.setPower(-1.0);
             rightMotor.setPower(1.0);
         }
-        if (gamepad1.left_stick_x < -0.5) { //When setting the left analog stick to left.
+        if (gamepad1.right_stick_x < -0.5) { //When setting the left analog stick to left.
             leftMotor.setPower(1.0);
             rightMotor.setPower(-1.0);
         }

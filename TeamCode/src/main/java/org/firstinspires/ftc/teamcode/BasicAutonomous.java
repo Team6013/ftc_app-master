@@ -28,10 +28,10 @@ import com.qualcomm.robotcore.util.Range;
  *                 Start where it says "Begin editing code here." and end where it says "Stop editing code here." DO NOT edit any code outside of those two comments!
  */
 
-@Autonomous(name="BasicAutonomous", group="Autonomous")
+@Autonomous(name="BasicAutonomous", group="")
 //@Disabled
 
-public class BasicAutonomousByRoba extends LinearOpMode {
+public class BasicAutonomous extends LinearOpMode {
 
     private ElapsedTime runTime = new ElapsedTime();
     private DcMotor leftMotor = null;
